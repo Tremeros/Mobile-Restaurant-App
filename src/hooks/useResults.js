@@ -7,10 +7,6 @@ export default () => {
     const [error, setError] = useState('');
     const [isLoading, setisLoading] = useState(false);
 
-    useEffect(() => {
-        searchApi('pizza');
-    }, []);
-
     const searchApi = async (searchTerm) => {
         setisLoading(true);
         try {
